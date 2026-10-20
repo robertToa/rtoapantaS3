@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rtoapantaS3.Views.vRegistro"
+             Title="vRegistro">
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="20">
+        <Label 
+            Text="REGISTRO DE USUARIO"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry x:Name="txtUsuario" 
+               Placeholder="Ingresar Usuario"/>
+        <Entry x:Name="txtContrasenia"
+               Placeholder="Ingresar Contraseña"
+               IsPassword="True"/>
+        <Button x:Name="btnRegistrar" 
+                Text="Registrar Usuario" 
+                Clicked="btnRegistrar_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

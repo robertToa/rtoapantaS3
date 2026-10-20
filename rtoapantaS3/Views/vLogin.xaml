@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rtoapantaS3.Views.vLogin"
+             Title="Login">
+    <VerticalStackLayout Margin="10"
+                         Padding="20"
+                         Spacing="20">
+        <Label 
+     Text="Iniciar Sesión"
+     VerticalOptions="Center" 
+     FontSize="20"
+     HorizontalOptions="Center"/>
+        <!--Source="https://www.uisrael.edu.ec/wp-content/uploads/2019/03/Untitled-2-min-1.png"-->
+        <Image
+            Source="uisrael.jpg"
+            WidthRequest="300"/>
+
+        <Grid RowSpacing="15" ColumnSpacing="10" 
+       HorizontalOptions="Center" 
+       VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="USUARIO"
+            FontSize="18"
+            Grid.Row="0"
+            Grid.Column="0"/>
+
+            <Entry x:Name="txtUsuario"
+            Placeholder="Ingresar Usuario"
+            Grid.Row="0"
+            Grid.Column="1"/>
+
+            <Label Text="CONTRASEÑA"
+            FontSize="18"
+            Grid.Row="1"
+            Grid.Column="0"/>
+
+            <Entry x:Name="txtContrasenia"
+            Placeholder="Ingresar Contraseña"
+            IsPassword="True"
+            Grid.Row="1"
+            Grid.Column="1"/>
+
+            <Button x:Name="btnIniciarSesión"
+             Text="Iniciar Sesión"
+             Clicked="btnIniciarSesión_Clicked"
+             Grid.Row="2"
+             Grid.Column="0"/>
+            <Button x:Name="btnRegistrar"
+             Text="Registrar Usuario"
+             Clicked="btnRegistrar_Clicked"
+             Grid.Row="2"
+             Grid.Column="1"/>
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
