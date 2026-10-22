@@ -4,11 +4,16 @@
              xmlns:local="clr-namespace:rtoapantaS3"
              x:Class="rtoapantaS3.App">
     <Application.Resources>
-        <ResourceDictionary>
+        <Style x:Key="GlobalButton" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="Brown"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+        <!--<ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
+        </ResourceDictionary>-->
     </Application.Resources>
 </Application>

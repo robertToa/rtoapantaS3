@@ -3,14 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="rtoapantaS3.Views.vLogin"
              Title="Login">
+    <!--ESTILO EXPLICITO-->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="estiloLab" TargetType="Label">
+                <Setter Property="TextColor" Value="Aqua"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+            <Style x:Key="estiloBoton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Tomato"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="Padding" Value="10,5"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <VerticalStackLayout Margin="10"
                          Padding="20"
                          Spacing="20">
         <Label 
-     Text="Iniciar Sesión"
-     VerticalOptions="Center" 
-     FontSize="20"
-     HorizontalOptions="Center"/>
+             Text="Iniciar Sesión"
+             VerticalOptions="Center"
+             FontSize="20"
+             HorizontalOptions="Center"/>
         <!--Source="https://www.uisrael.edu.ec/wp-content/uploads/2019/03/Untitled-2-min-1.png"-->
         <Image
             Source="uisrael.jpg"
@@ -32,6 +50,7 @@
 
             <Label Text="USUARIO"
             FontSize="18"
+                   Style="{StaticResource estiloLab}"
             Grid.Row="0"
             Grid.Column="0"/>
 
@@ -42,6 +61,7 @@
 
             <Label Text="CONTRASEÑA"
             FontSize="18"
+                   Style="{StaticResource estiloLab}"
             Grid.Row="1"
             Grid.Column="0"/>
 
@@ -54,10 +74,12 @@
             <Button x:Name="btnIniciarSesión"
              Text="Iniciar Sesión"
              Clicked="btnIniciarSesión_Clicked"
+                    Style="{StaticResource GlobalButton}"
              Grid.Row="2"
              Grid.Column="0"/>
             <Button x:Name="btnRegistrar"
              Text="Registrar Usuario"
+                     Style="{StaticResource estiloBoton}"
              Clicked="btnRegistrar_Clicked"
              Grid.Row="2"
              Grid.Column="1"/>

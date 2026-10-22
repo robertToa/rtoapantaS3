@@ -3,6 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="rtoapantaS3.Views.vRegistro"
              Title="vRegistro">
+    <ContentPage.Resources>
+        <Style TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="BlueViolet"/>
+            <Setter Property="TextColor" Value="Yellow"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+    </ContentPage.Resources>
     <VerticalStackLayout
         Spacing="20"
         Padding="20">
